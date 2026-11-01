@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0d1117;
+    font-family: 'Inter', sans-serif;
+    color: #c9d1d9;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.terminal-container {
+    width: 850px;
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+}
+
+.terminal-header {
+    background: #21262d;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #30363d;
+}
+
+.buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.btn {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red { background: #ff5f56; }
+.yellow { background: #ffbd2e; }
+.green { background: #27c93f; }
+
+.title {
+    font-family: 'Fira Code', monospace;
+    font-size: 13px;
+    color: #8b949e;
+}
+
+.status-indicator {
+    font-size: 11px;
+    font-weight: 600;
+    color: #3fb950;
+    background: rgba(63, 185, 80, 0.1);
+    padding: 2px 8px;
+    border-radius: 12px;
+}
+
+.terminal-body {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+}
+
+.code-panel {
+    background: #0d1117;
+    padding: 20px;
+    font-family: 'Fira Code', monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    border-right: 1px solid #30363d;
+    overflow-x: auto;
+}
+
+/* Python Sözdizimi Renklendirmesi (CSS ile) */
+.keyword { color: #ff7b72; }
+.title { color: #d2a8ff; }
+.function { color: #79c0ff; }
+.string { color: #a5d6ff; }
+.number { color: #79c0ff; }
+
+.control-panel {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.control-panel h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #f0f6fc;
+}
+
+.control-panel p {
+    font-size: 13px;
+    color: #8b949e;
+    margin-bottom: 20px;
+}
+
+.output-box {
+    background: #0d1117;
+    border: 1px solid #30363d;
+    padding: 12px;
+    border-radius: 6px;
+    font-family: 'Fira Code', monospace;
+    font-size: 12px;
+    color: #7ee787;
+    min-height: 80px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.action-btn {
+    background: #238636;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.action-btn:hover {
+    background: #2ea043;
+}
