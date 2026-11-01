@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberSim // Interactive Core</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="terminal-container">
+        <!-- Üst Bar -->
+        <div class="terminal-header">
+            <div class="buttons">
+                <span class="btn red"></span>
+                <span class="btn yellow"></span>
+                <span class="btn green"></span>
+            </div>
+            <div class="title">core_engine.py - v2.4.1</div>
+            <div class="status-indicator">ONLINE</div>
+        </div>
+
+        <!-- İçerik Alanı -->
+        <div class="terminal-body">
+            <!-- Sol Panel: Python Kod Görünümü -->
+            <div class="code-panel">
+                <pre><span class="keyword">import</span> time
+<span class="keyword">import</span> random
+
+<span class="keyword">class</span> <span class="title">CoreEngine</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(self):
+        self.status = <span class="string">"ACTIVE"</span>
+        self.power = <span class="number">100</span>
+
+    <span class="keyword">def</span> <span class="function">execute_protocol</span>(self):
+        <span class="keyword">print</span>(<span class="string">"[SYS] Starting sequence..."</span>)
+        <span class="keyword">return</span> random.randint(1000, 9999)</pre>
+            </div>
+
+            <!-- Sağ Panel: Etkileşimli Kontrol -->
+            <div class="control-panel">
+                <h3>Sistem Kontrol Paneli</h3>
+                <p>Python tabanlı sanal çekirdeği test etmek için butona tıklayın.</p>
+                <div class="output-box" id="output">Sistem hazır. Komut bekleniyor...</div>
+                <button id="runBtn" class="action-btn">Sistemi Çalıştır (JS)</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
